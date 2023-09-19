@@ -1,6 +1,6 @@
 # Embedding quantum circuit in classical variational methods
 
-This repository contains the code to reproduce the results of the paper ["Embedding quantum cicuit in classical variational methods"](./).
+This repository contains the code to reproduce the results of the paper ["Embedding Classical Variational Methods in Quantum Circuits"](https://arxiv.org/abs/2309.08666).
 
 ## Download the code
 

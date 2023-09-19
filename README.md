@@ -7,13 +7,13 @@ This repository contains the code to reproduce the results of the paper ["Embedd
 You can download all the code present in this repository by going to the directory in which you want to save it and execute
 
 ```
-git clone 
+git clone https://github.com/StefanoBarison/hybrid_ansatz.git
 ```
 
 ## Libraries installation
 
 The simulations are performed in Python using [Netket](https://www.netket.org/) library to create the classical model (might it be a simple mean field ansatz or a Neural Quantum State) and [Pennylane](https://pennylane.ai/) for the quantum circuits.
-Once you are in the downloaded directory you can install all the required packages by exacuting
+Once you are in the downloaded directory you can install all the required packages by executing
 
 ```
 pip install -r requirements.txt

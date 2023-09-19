@@ -49,12 +49,12 @@ class CX(Operation):
         super().__init__(phi, wires=wires, do_queue=do_queue, id=id)
 
     @staticmethod
-    def compute_matrix(theta):  # pylint: disable=arguments-differ
+    def compute_matrix(theta): 
         
         I = qml.Identity.compute_matrix()
-        Rx = qml.PauliX.compute_matrix()
+        cX = qml.PauliX.compute_matrix()
 
-        return qml.math.where(theta, qml.Identity.compute_matrix(), qml.PauliX.compute_matrix())
+        return qml.math.where(theta, I, cX)
 
         # The following avoids casting an imaginary quantity to reals when backpropagating
         #return qml.math.stack([stack_last([c, js]), stack_last([js, c])], axis=-2)
